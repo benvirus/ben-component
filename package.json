@@ -1,7 +1,7 @@
 {
   "name": "vjs-component",
   "email": "chenhaijiao@howzhi.com",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "videojs web component",
   "main": "./src/componet.js",
   "scripts": {
