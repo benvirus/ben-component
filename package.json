@@ -1,0 +1,12 @@
+{
+  "name": "vjs-component",
+  "email": "chenhaijiao@howzhi.com",
+  "version": "1.0.0",
+  "description": "videojs web component",
+  "main": "./src/componet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Chen",
+  "license": "ISC"
+}
