@@ -1,9 +1,9 @@
 {
-  "name": "vjs-component",
+  "name": "ben-component",
   "email": "chenhaijiao@howzhi.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "videojs web component",
-  "main": "./src/componet.js",
+  "main": "./src/component.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

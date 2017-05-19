@@ -1,8 +1,6 @@
 import Dom from './dom.js';
 import Event from './event.js';
 
-const eventManager = new Map()
-
 class Component {
   constructor(player){
     this.player = player;
