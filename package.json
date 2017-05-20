@@ -1,7 +1,7 @@
 {
   "name": "ben-component",
   "email": "chenhaijiao@howzhi.com",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "videojs web component",
   "main": "./src/component.js",
   "scripts": {
