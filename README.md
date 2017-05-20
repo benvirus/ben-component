@@ -1,6 +1,6 @@
 ### What's this component for?
 
-It's a base component template for creating a web component. You can easily to add a event and trigger a event, add a class and remove a class, even to add a child component which is extends this component.
+It's a base component template for creating a web component written with ES6. Be sure you can babel it in your dev env before use it. You can easily to add a event and trigger a event, add a class and remove a class, even to add a child component which is extends this component. Contact me without hastation if there is any problem when you using it. Best Wishes.
 
 ### Usage
 
@@ -54,6 +54,9 @@ Parent envent: a
 
 ### Change Log
 
+##### 0.0.4 (2017-05-20)
+* [feature] Finished the README.md and add some examples.
+
 ##### 0.0.3 (2017-05-19)
 * [feature] Set the parent component as the first argv of constructor.
 
@@ -66,4 +69,5 @@ Parent envent: a
 ### Contact
 
 Author: Ben Chen
+
 E-mail: chenhaijiao@howzhi.com
