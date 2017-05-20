@@ -1,10 +1,13 @@
 import Dom from './dom.js';
 import Event from './event.js';
 
+const components_ = {};
+
 class Component {
-  constructor(player){
-    this.player = player;
-    this.containerEl = this.containerEl();
+  constructor(parent, options){
+    this.parent = parent;
+    this.options = options;
+    this.el = this.createEl();
   }
 
   on(eventType, callback){
@@ -19,7 +22,7 @@ class Component {
     Event.trigger(this.el, eventType, data)
   }
 
-  createEl(elType, attrs = {}, props = {}){
+  createEl(elType = 'div', attrs = {}, props = {}){
     return Dom.createEl(elType, attrs, props);
   }
 
@@ -41,8 +44,25 @@ class Component {
     this.children.push(component);
   }
 
-  containerEl(){
+  static registerComponent(name, comp) {
+    if (!name) {
+      return;
+    }
 
+    components_[name] = comp;
+    return comp;
+  }
+
+  static getComponent(name) {
+    if (!name) {
+      return;
+    }
+
+    if (components_[name]) {
+      return components_[name];
+    }
+
+    throw new Error('The component you wanna get is not exist!');
   }
 }
 
