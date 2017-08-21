@@ -4,41 +4,45 @@ import Event from './event.js';
 const components_ = {};
 
 class Component {
-  constructor(parent, options){
+  constructor(parent, options) {
     this.parent = parent;
     this.options = options;
     this.el = this.createEl();
   }
 
-  on(eventType, callback){
+  on(eventType, callback) {
     Event.on(this.el, eventType, callback);
   }
 
-  one(eventType, callback){
+  one(eventType, callback) {
     Event.one(this.el, eventType, callback);
   }
 
-  trigger(eventType, data){
+  off(eventType, callback) {
+    Event.off(this.el, eventType, callback);
+  }
+
+  trigger(eventType, data) {
     Event.trigger(this.el, eventType, data)
   }
 
-  createEl(elType = 'div', attrs = {}, props = {}){
+  createEl(elType = 'div', attrs = {}, props = {}) {
     return Dom.createEl(elType, attrs, props);
   }
 
-  addClass(className){
+  addClass(className) {
     Dom.addClass(this.el, className);
   }
 
-  removeClass(className){
+  removeClass(className) {
     Dom.removeClass(this.el, className);
   }
 
-  hasClass(className){
+  hasClass(className) {
     return Dom.hasClass(this.el, className);
   }
 
-  addChild(component){
+  addChild(component) {
     (this.containerEl || this.el).appendChild(component.el);
     this.children || (this.children = []);
     this.children.push(component);
