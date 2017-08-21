@@ -54,6 +54,9 @@ Parent envent: a
 
 ### Change Log
 
+##### 0.0.5 (2017-08-21)
+* [bugix] Add off method to remove event listener.
+
 ##### 0.0.4 (2017-05-20)
 * [feature] Finished the README.md and add some examples.
 
